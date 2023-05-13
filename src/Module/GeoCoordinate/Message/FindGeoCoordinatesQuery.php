@@ -12,16 +12,4 @@ class FindGeoCoordinatesQuery implements SyncMessageInterface
     public function __construct(public readonly Address $address)
     {
     }
-
-    public function serialize(): array
-    {
-        return [
-            '',
-        ];
-    }
-
-    public function deserialize(array $array): static
-    {
-        // TODO: Implement deserialize() method.
-    }
 }

@@ -6,7 +6,5 @@ namespace App\Shared\Messenger;
 
 interface SyncMessageInterface
 {
-    public function serialize(): array;
 
-    public function deserialize(array $array): static;
 }
