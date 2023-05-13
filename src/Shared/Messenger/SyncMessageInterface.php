@@ -1,0 +1,12 @@
+<?php
+
+declare(strict_types=1);
+
+namespace App\Shared\Messenger;
+
+interface SyncMessageInterface
+{
+    public function serialize(): array;
+
+    public function deserialize(array $array): static;
+}
